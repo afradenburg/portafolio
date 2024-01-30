@@ -1,0 +1,62 @@
+.modal-profile{
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+.imgLogoNavbar{
+    position: relative;
+    width: 105%;
+    transform: scale(.7);
+    left: -5%;
+    top: 3%;
+}
+
+
+
+@media (max-width: 768px) {
+    .iconos-nav{
+        position: absolute;
+        right: 12%;
+    }
+
+    .modal-profile{
+        position: absolute;
+        top: 32px;
+        right: -40px;
+    }
+}
+
+
+/* Estilos para tablets */
+
+
+.navBar {
+    background-color: rgb(154, 107, 5);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  border: 5px;
+  border-radius: 25px;
+  gap: 3px;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+
+.navBar p {
+    color: rgb(251, 249, 249);
+    font-weight: bold;
+    text-decoration: solid color white;
+    border-color: rgb(158, 24, 24);
+    display: flex;
+    flex-grow: initial;
+    flex-direction: row;
+    padding: 10px;
+    border: 5px;
+}
