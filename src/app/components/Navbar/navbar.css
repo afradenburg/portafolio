@@ -42,7 +42,7 @@
   align-self: center;
   justify-content: center;
   border: 5px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   gap: 3px;
   justify-content: flex-start;
   padding: 10px;

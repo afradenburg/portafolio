@@ -5,15 +5,14 @@ import "../app/home.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-
   const AnimatedText = () => {
     const [text, setText] = useState("");
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
       const interval = setInterval(() => {
-        if (index < "Soy Andres Castro Flechas".length) {
-          setText((prevText) => prevText + "Soy Andres Castro Flechas"[index]);
+        if (index < "Michael Andres Castro".length) {
+          setText((prevText) => prevText + "Michael Andres Castro"[index]);
           setIndex((prevIndex) => prevIndex + 1);
         } else {
           clearInterval(interval);
@@ -38,49 +37,83 @@ export default function Home() {
       image:
         "https://media.licdn.com/dms/image/D4E2DAQEbr5Pblw5Dpg/profile-treasury-image-shrink_1920_1920/0/1704212520547?e=1707242400&v=beta&t=cCfTOL8ke234XPF2ivbmtM_Pbb0n6YQAQFbH9VBX9Ng",
       gitHub: "https://github.com/zuoki/VorttexGaming",
-      deploy: "https://vorttex-gaming-topabli2-topablis-projects.vercel.app/"
+      deploy: "https://vorttex-gaming-topabli2-topablis-projects.vercel.app/",
     },
     {
       id: 2,
       name: "Dogs by breed",
       image:
         "https://res.cloudinary.com/djif4cgg0/image/upload/v1706195433/images/ctkbnx8earvdav0ec6xq.jpg",
-        gitHub: "https://github.com/afradenburg/pi-Dogs",
-        deploy: "https://pi-dogs-jet.vercel.app/"
+      gitHub: "https://github.com/afradenburg/pi-Dogs",
+      deploy: "https://pi-dogs-jet.vercel.app/",
     },
   ];
 
   return (
     <div className="homePage">
-      <h1>Bienvenido a mi portafolio</h1>
+      <h1>Bienvenido/a! a mi portafolio</h1>
       <div
         style={{
           display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+          marginTop: "50px",
         }}
       >
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            alignContent: "space-between",
-            padding: "60px",
+            alignItems: "center",
+            padding: "20px",
           }}
         >
-          
           {AnimatedText()}
-          <h2> desarrollador full stack developer</h2>
+          <h2 style={{ marginTop: "20px" }}>Full Stack Developer</h2>
         </div>
-        <img src={person.image} alt="foto de perfil" />
+        <img
+          src={person.image}
+          alt="foto de perfil"
+          style={{
+            width: "100%",
+            maxWidth: "300px",
+            maxHeight: "400px",
+            marginTop: "20px",
+            borderRadius: "150px",
+          }}
+        />
       </div>
-      <p>
-        Soy desarrollador Full Stack y Psicologo profesional, actualmente
-        enfocado en el desarrollo de aplicaciones para fortalecer mis
-        conocimientos y cuento con excelentes habilidades sociales
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: "1.5rem",
+          marginTop: "50px",
+        }}
+      >
+        Soy desarrollador Full Stack graduado de HENRY y Psicólogo graduado de
+        la UDEC, actualmente enfocado en el desarrollo de aplicaciones para
+        fortalecer mis conocimientos. Cuento con excelentes habilidades blandas
+        y técnicas.
       </p>
-      <div style={{ alignContent: "center", display: "flex", justifyContent: "center" }}>
-      <h1>Tecnologias</h1>
+      <p
+        style={{
+          textAlign: "center",
+          fontSize: "1.5rem",
+          marginBottom: "50px",
+        }}
+      >
+        Actualmente estoy buscando oportunidades como desarrollador web. Si te
+        interesa mi perfil, no dudes en contactarme.
+      </p>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          marginTop: "170px",
+        }}
+      >
+        <h1>Tecnologías</h1>
       </div>
       <div
         style={{
@@ -180,9 +213,19 @@ export default function Home() {
           </a>{" "}
         </p>
       </div>
-
-      <Link href={"/proyects"}>
-        <h3>Mis Proyectos</h3>
+      <Link
+        href={"/proyects"}
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "110px",
+        }}
+      >
+        <h2 style={{ textDecoration: "none", color: "black" }}>
+          Mis Proyectos
+        </h2>
       </Link>
       <div
         style={{
@@ -191,36 +234,102 @@ export default function Home() {
           padding: "10px",
           justifyContent: "space-between",
           margin: "150px",
+          flexWrap: "wrap",
         }}
       >
-      {proyects &&
+        {proyects &&
           proyects.map((proyect) => (
-            <div key={proyect.id} style={{padding: "20px", maxWidth: "650px"}}>
+            <div
+              key={proyect.id}
+              style={{
+                padding: "20px",
+                maxWidth: "650px",
+                marginBottom: "20px",
+                flexBasis: "100%",
+              }}
+            >
               <h1>proyecto: {proyect.name} </h1>
               <img
                 style={{
                   border: "5px",
                   borderRadius: "15px",
-                  maxWidth: "800px",
+                  maxWidth: "1000px",
+                  width: "100%",
                 }}
                 src={proyect.image}
                 alt={proyect.name}
               />
-              <div style={{display: "flex", justifyContent: "space-around"}}>
-                  <Link href={proyect.gitHub}>
-              
-                  <img src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757_960_720.png" alt="github link" style={{maxWidth: "100px"}}/>
-                
-                  </Link>
-                <Link href={proyect.deploy}>
-                  <img src="https://as1.ftcdn.net/v2/jpg/05/10/50/28/1000_F_510502864_Y6EuBXlRa9JfWHqvYG34z1xxHUnVams5.jpg" alt="deploy link" style={{maxWidth: "100px"}}/>
+              <div style={{ display: "flex", justifyContent: "space-around" }}>
+                <Link href={proyect.gitHub}>
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757_960_720.png"
+                    alt="github link"
+                    style={{ maxWidth: "100px" }}
+                  />
                 </Link>
-                
+                <Link href={proyect.deploy}>
+                  <img
+                    src="https://as1.ftcdn.net/v2/jpg/05/10/50/28/1000_F_510502864_Y6EuBXlRa9JfWHqvYG34z1xxHUnVams5.jpg"
+                    alt="deploy link"
+                    style={{ maxWidth: "100px" }}
+                  />
+                </Link>
               </div>
             </div>
           ))}
-
       </div>
+      <div>
+        <h2
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          Contacto
+        </h2>
+        <p
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "1.5rem",
+            marginBottom: "50px",
+          }}
+        >
+          No dudes en contactarme por cualquiera de los siguientes medios.
+        </p>
+      </div>
+      <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "50px",
+  }}
+>
+  <a href="https://www.linkedin.com/in/andres-castro-flechas-39a0ba186/" target="_blank" rel="noreferrer">
+    <img
+      src="https://th.bing.com/th/id/R.eb68b87815aaaaba6621aa98d2e38bf5?rik=dlxhbnYpsgIL4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_24845.png&ehk=7L0l%2bl%2bMYbWa7hmGjFf%2b%2f7IEDbPLQku663OM4xHk018%3d&risl=&pid=ImgRaw&r=0"
+      alt="LinkedIn"
+      style={{ width: "40px", height: "40px", marginRight: "10px" }}
+    />
+  </a>
+  <a href="https://github.com/afradenburg" target="_blank" rel="noreferrer">
+    <img
+      src="https://th.bing.com/th/id/R.7a864f07681f187fb572468bfc949977?rik=EyUQGBjtSbMjVw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG80.png&ehk=sCQlSHnb7Wc8WNPgOilokXbf8jL4g20yv7QFEFpl6ko%3d&risl=&pid=ImgRaw&r=0"
+      alt="GitHub"
+      style={{ width: "40px", height: "40px", marginRight: "10px" }}
+    />
+  </a>
+  <a href="mailto:andres.burg@hotmail.com">
+    <img
+      src="https://th.bing.com/th/id/OIP.VEt1EhN43jbYg0DDxl4FJQHaHa?rs=1&pid=ImgDetMain"
+      alt="Correo electrónico"
+      style={{ width: "40px", height: "40px" }}
+    />
+  </a>
+</div>
+
     </div>
   );
 }
