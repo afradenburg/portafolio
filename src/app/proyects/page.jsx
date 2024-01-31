@@ -4,7 +4,7 @@ const Page = () => {
   const proyects = [
     {
       id: 1,
-      name: "Vorttex Gaming",
+      name: 'Vorttex Gaming',
       image:
         "https://media.licdn.com/dms/image/D4E2DAQEbr5Pblw5Dpg/profile-treasury-image-shrink_1920_1920/0/1704212520547?e=1707242400&v=beta&t=cCfTOL8ke234XPF2ivbmtM_Pbb0n6YQAQFbH9VBX9Ng",
     },
@@ -18,7 +18,7 @@ const Page = () => {
 
   return (
     <div>
-      "Aca van los proyectio"
+      
       {proyects &&
         proyects.map((proyect) => (
           <div key={proyect.id}>
