@@ -130,7 +130,9 @@ export default function Home() {
           alignItems: "center",
           display: "flex",
           flexDirection: "row",
+          flexWrap: "wrap",
           margin: "0%",
+          marginRight: "10px",
           justifyContent: "center",
         }}
       >
@@ -194,6 +196,9 @@ export default function Home() {
               height="80"
             />{" "}
           </a>{" "}
+        </p>
+        <p align="left">
+          {" "}
           <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
             {" "}
             <img
@@ -223,8 +228,8 @@ export default function Home() {
           </a>{" "}
         </p>
       </div>
-      <Link
-        href={"/proyects"}
+      <div
+        
         style={{
           textDecoration: "none",
           display: "flex",
@@ -236,7 +241,7 @@ export default function Home() {
         <h2 style={{ textDecoration: "none", color: "black" }}>
           Mis Proyectos
         </h2>
-      </Link>
+      </div>
       <div
         style={{
           display: "flex",
