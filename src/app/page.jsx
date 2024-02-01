@@ -91,7 +91,7 @@ export default function Home() {
         }}
       >
         Soy desarrollador Full Stack graduado de HENRY y Psicólogo graduado de
-        la UDEC, actualmente enfocado en el desarrollo de aplicaciones para
+        la UDEC, estoy enfocado en el desarrollo de aplicaciones para
         fortalecer mis conocimientos. Cuento con excelentes habilidades blandas
         y técnicas.
       </p>
@@ -110,7 +110,7 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          marginTop: "170px",
+          marginTop: "80px",
         }}
       >
         <h1>Tecnologías</h1>
@@ -232,8 +232,7 @@ export default function Home() {
           display: "flex",
           flexDirection: "row",
           padding: "10px",
-          justifyContent: "space-between",
-          margin: "150px",
+          justifyContent: "space-around",
           flexWrap: "wrap",
         }}
       >
@@ -247,6 +246,7 @@ export default function Home() {
                 marginBottom: "20px",
                 flexBasis: "100%",
                 justifyContent: "start",
+                width: "100%"
               }}
             >
               <h1
@@ -255,10 +255,9 @@ export default function Home() {
                   flexWrap: "wrap",
                   justifyContent: "start",
                   marginLeft: "20px",
-                  marginRight: "600px"
                 }}
               >
-                proyecto: {proyect.name}{" "}
+                {proyect.name}{" "}
               </h1>
               <img
                 style={{
@@ -267,7 +266,7 @@ export default function Home() {
                   maxWidth: "1000px",
                   minHeight: "412px",
                   width: "100%",
-                  marginRight: "500px",
+                  minWidth: "300px"
                 }}
                 src={proyect.image}
                 alt={proyect.name}
@@ -283,14 +282,14 @@ export default function Home() {
                   <img
                     src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757_960_720.png"
                     alt="github link"
-                    style={{ maxWidth: "100px", marginRight: "150px" }}
+                    style={{ maxWidth: "80px" }}
                   />
                 </Link>
                 <Link href={proyect.deploy}>
                   <img
                     src="https://as1.ftcdn.net/v2/jpg/05/10/50/28/1000_F_510502864_Y6EuBXlRa9JfWHqvYG34z1xxHUnVams5.jpg"
                     alt="deploy link"
-                    style={{ maxWidth: "100px", marginRight: "700px" }}
+                    style={{ maxWidth: "80px" }}
                   />
                 </Link>
               </div>
