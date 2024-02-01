@@ -315,7 +315,7 @@ export default function Home() {
                 }}
               >
               {proyect.tecnologias.map((tecno)=>(
-                <img src={tecno} alt="tecnologias proyecto" style={{maxWidth: "40px"}}/>
+                <img src={tecno} alt="tecnologias proyecto" key={tecno} style={{maxWidth: "40px"}}/>
                 ))}
                 </div>
             </div>
