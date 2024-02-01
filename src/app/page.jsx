@@ -280,7 +280,7 @@ export default function Home() {
                 style={{
                   display: "flex",
                   flexDirection: "row",
-                  // justifyContent: "space-around",
+                  justifyContent: "center",
                 }}
               >
                 <Link href={proyect.gitHub}>
