@@ -38,6 +38,11 @@ export default function Home() {
         "https://res.cloudinary.com/djif4cgg0/image/upload/v1706793891/images/wvovglz07xvr7fkd0n8f.jpg",
       gitHub: "https://github.com/zuoki/VorttexGaming",
       deploy: "https://vorttex-gaming-topabli2-topablis-projects.vercel.app/",
+      tecnologias: [
+        "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
+        "https://static.vecteezy.com/system/resources/previews/023/078/342/large_2x/prism-tech-logo-design-vector.jpg"
+      ],
     },
     {
       id: 2,
@@ -46,6 +51,13 @@ export default function Home() {
         "https://res.cloudinary.com/djif4cgg0/image/upload/v1706195433/images/ctkbnx8earvdav0ec6xq.jpg",
       gitHub: "https://github.com/afradenburg/pi-Dogs",
       deploy: "https://pi-dogs-jet.vercel.app/",
+      tecnologias: [
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+      ],
     },
   ];
 
@@ -90,9 +102,8 @@ export default function Home() {
         }}
       >
         Soy desarrollador Full Stack graduado de HENRY y Psicólogo graduado de
-        la UDEC, estoy enfocado en el desarrollo de aplicaciones para
-        fortalecer mis conocimientos. Cuento con excelentes habilidades blandas
-        y técnicas.
+        la UDEC, estoy enfocado en el desarrollo de aplicaciones para fortalecer
+        mis conocimientos. Cuento con excelentes habilidades blandas y técnicas.
       </p>
       <p
         style={{
@@ -241,11 +252,13 @@ export default function Home() {
               key={proyect.id}
               style={{
                 padding: "20px",
-                maxWidth: "650px",
+                maxWidth: "350px",
                 marginBottom: "20px",
                 flexBasis: "100%",
                 justifyContent: "start",
-                width: "100%"
+                width: "100%",
+                backgroundColor: " rgb(195, 193, 193)",
+                borderRadius: "15px",
               }}
             >
               <h1
@@ -258,18 +271,6 @@ export default function Home() {
               >
                 {proyect.name}{" "}
               </h1>
-              <img
-                style={{
-                  border: "5px",
-                  borderRadius: "15px",
-                  maxWidth: "1000px",
-                  minHeight: "412px",
-                  width: "100%",
-                  minWidth: "300px"
-                }}
-                src={proyect.image}
-                alt={proyect.name}
-              />
               <div
                 style={{
                   display: "flex",
@@ -292,15 +293,43 @@ export default function Home() {
                   />
                 </Link>
               </div>
+              <img
+                style={{
+                  border: "5px",
+                  borderRadius: "15px",
+                  maxWidth: "100px",
+                  minHeight: "212px",
+                  width: "100%",
+                  minWidth: "300px",
+                }}
+                src={proyect.image}
+                alt={proyect.name}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  alignContent: "center",
+                  justifyContent: "center",
+                }}
+              >
+              {proyect.tecnologias.map((tecno)=>(
+                <img src={tecno} alt="tecnologias proyecto" style={{maxWidth: "40px"}}/>
+                ))}
+                </div>
             </div>
           ))}
       </div>
-      <div >
+      <div 
+      style={{ borderRadius: "15px", backgroundColor: " rgb(242, 237, 237)",
+    }}>
         <h2
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            
           }}
         >
           Contacto
