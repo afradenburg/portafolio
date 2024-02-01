@@ -57,7 +57,7 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          marginTop: "50px",
+          marginTop: "10px",
         }}
       >
         <div
@@ -65,7 +65,6 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "20px",
           }}
         >
           {AnimatedText()}
