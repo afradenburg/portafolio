@@ -11,8 +11,8 @@ export default function Home() {
 
     useEffect(() => {
       const interval = setInterval(() => {
-        if (index < "Michael Andres Castro".length) {
-          setText((prevText) => prevText + "Michael Andres Castro"[index]);
+        if (index < "Andrés Castro".length) {
+          setText((prevText) => prevText + "Andrés Castro"[index]);
           setIndex((prevIndex) => prevIndex + 1);
         } else {
           clearInterval(interval);
