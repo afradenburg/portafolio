@@ -246,10 +246,20 @@ export default function Home() {
                 maxWidth: "650px",
                 marginBottom: "20px",
                 flexBasis: "100%",
-                justifyContent: "start"
+                justifyContent: "start",
               }}
             >
-              <h1 style={{display: "flex", flexWrap: "wrap", justifyContent: "start", marginLeft: "20px"}}>proyecto: {proyect.name} </h1>
+              <h1
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: "start",
+                  marginLeft: "20px",
+                  marginRight: "600px"
+                }}
+              >
+                proyecto: {proyect.name}{" "}
+              </h1>
               <img
                 style={{
                   border: "5px",
@@ -257,31 +267,37 @@ export default function Home() {
                   maxWidth: "1000px",
                   minHeight: "412px",
                   width: "100%",
-                  marginRight: "500px"
+                  marginRight: "500px",
                 }}
                 src={proyect.image}
                 alt={proyect.name}
               />
-              <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  // justifyContent: "space-around",
+                }}
+              >
                 <Link href={proyect.gitHub}>
                   <img
                     src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757_960_720.png"
                     alt="github link"
-                    style={{ maxWidth: "100px" }}
+                    style={{ maxWidth: "100px", marginRight: "150px" }}
                   />
                 </Link>
                 <Link href={proyect.deploy}>
                   <img
                     src="https://as1.ftcdn.net/v2/jpg/05/10/50/28/1000_F_510502864_Y6EuBXlRa9JfWHqvYG34z1xxHUnVams5.jpg"
                     alt="deploy link"
-                    style={{ maxWidth: "100px" }}
+                    style={{ maxWidth: "100px", marginRight: "700px" }}
                   />
                 </Link>
               </div>
             </div>
           ))}
       </div>
-      <div>
+      <div >
         <h2
           style={{
             display: "flex",
@@ -304,35 +320,43 @@ export default function Home() {
         </p>
       </div>
       <div
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    marginBottom: "50px",
-  }}
->
-  <a href="https://www.linkedin.com/in/andres-castro-flechas-39a0ba186/" target="_blank" rel="noreferrer">
-    <img
-      src="https://th.bing.com/th/id/R.eb68b87815aaaaba6621aa98d2e38bf5?rik=dlxhbnYpsgIL4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_24845.png&ehk=7L0l%2bl%2bMYbWa7hmGjFf%2b%2f7IEDbPLQku663OM4xHk018%3d&risl=&pid=ImgRaw&r=0"
-      alt="LinkedIn"
-      style={{ width: "40px", height: "40px", marginRight: "10px" }}
-    />
-  </a>
-  <a href="https://github.com/afradenburg" target="_blank" rel="noreferrer">
-    <img
-      src="https://th.bing.com/th/id/R.7a864f07681f187fb572468bfc949977?rik=EyUQGBjtSbMjVw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG80.png&ehk=sCQlSHnb7Wc8WNPgOilokXbf8jL4g20yv7QFEFpl6ko%3d&risl=&pid=ImgRaw&r=0"
-      alt="GitHub"
-      style={{ width: "40px", height: "40px", marginRight: "10px" }}
-    />
-  </a>
-  <a href="mailto:andres.burg@hotmail.com">
-    <img
-      src="https://th.bing.com/th/id/OIP.VEt1EhN43jbYg0DDxl4FJQHaHa?rs=1&pid=ImgDetMain"
-      alt="Correo electrónico"
-      style={{ width: "40px", height: "40px" }}
-    />
-  </a>
-</div>
-
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          marginBottom: "50px",
+        }}
+      >
+        <a
+          href="https://www.linkedin.com/in/andres-castro-flechas-39a0ba186/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://th.bing.com/th/id/R.eb68b87815aaaaba6621aa98d2e38bf5?rik=dlxhbnYpsgIL4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_24845.png&ehk=7L0l%2bl%2bMYbWa7hmGjFf%2b%2f7IEDbPLQku663OM4xHk018%3d&risl=&pid=ImgRaw&r=0"
+            alt="LinkedIn"
+            style={{ width: "40px", height: "40px", marginRight: "10px" }}
+          />
+        </a>
+        <a
+          href="https://github.com/afradenburg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://th.bing.com/th/id/R.7a864f07681f187fb572468bfc949977?rik=EyUQGBjtSbMjVw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG80.png&ehk=sCQlSHnb7Wc8WNPgOilokXbf8jL4g20yv7QFEFpl6ko%3d&risl=&pid=ImgRaw&r=0"
+            alt="GitHub"
+            style={{ width: "40px", height: "40px", marginRight: "10px" }}
+          />
+        </a>
+        <a href="mailto:andres.burg@hotmail.com">
+          <img
+            src="https://th.bing.com/th/id/OIP.VEt1EhN43jbYg0DDxl4FJQHaHa?rs=1&pid=ImgDetMain"
+            alt="Correo electrónico"
+            style={{ width: "40px", height: "40px" }}
+          />
+        </a>
+      </div>
     </div>
   );
 }
