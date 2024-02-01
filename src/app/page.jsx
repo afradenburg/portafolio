@@ -35,7 +35,7 @@ export default function Home() {
       id: 1,
       name: "Vorttex Gaming",
       image:
-        "https://media.licdn.com/dms/image/D4E2DAQEbr5Pblw5Dpg/profile-treasury-image-shrink_1920_1920/0/1704212520547?e=1707242400&v=beta&t=cCfTOL8ke234XPF2ivbmtM_Pbb0n6YQAQFbH9VBX9Ng",
+        "https://res.cloudinary.com/djif4cgg0/image/upload/v1706793891/images/wvovglz07xvr7fkd0n8f.jpg",
       gitHub: "https://github.com/zuoki/VorttexGaming",
       deploy: "https://vorttex-gaming-topabli2-topablis-projects.vercel.app/",
     },
@@ -246,20 +246,23 @@ export default function Home() {
                 maxWidth: "650px",
                 marginBottom: "20px",
                 flexBasis: "100%",
+                justifyContent: "start"
               }}
             >
-              <h1>proyecto: {proyect.name} </h1>
+              <h1 style={{display: "flex", flexWrap: "wrap", justifyContent: "start", marginLeft: "20px"}}>proyecto: {proyect.name} </h1>
               <img
                 style={{
                   border: "5px",
                   borderRadius: "15px",
                   maxWidth: "1000px",
+                  minHeight: "412px",
                   width: "100%",
+                  marginRight: "500px"
                 }}
                 src={proyect.image}
                 alt={proyect.name}
               />
-              <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
                 <Link href={proyect.gitHub}>
                   <img
                     src="https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757_960_720.png"
