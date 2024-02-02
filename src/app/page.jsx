@@ -294,7 +294,7 @@ export default function Home() {
                   <img
                     src="https://as1.ftcdn.net/v2/jpg/05/10/50/28/1000_F_510502864_Y6EuBXlRa9JfWHqvYG34z1xxHUnVams5.jpg"
                     alt="deploy link"
-                    style={{ maxWidth: "80px" }}
+                    style={{ maxWidth: "73px" }}
                   />
                 </Link>
               </div>
