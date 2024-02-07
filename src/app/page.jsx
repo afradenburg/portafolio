@@ -37,7 +37,7 @@ export default function Home() {
       image:
         "https://res.cloudinary.com/djif4cgg0/image/upload/v1706793891/images/wvovglz07xvr7fkd0n8f.jpg",
       gitHub: "https://github.com/zuoki/VorttexGaming",
-      deploy: "https://vorttex-gaming-topabli2-topablis-projects.vercel.app/",
+      deploy: "https://vorttexgaming2-0-wbmk.vercel.app/",
       tecnologias: [
         "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
