@@ -25,7 +25,15 @@ export default function Home() {
     }, [index]);
     return <h1>{text}</h1>;
   };
+  const [isHovered, setIsHovered] = useState(false);
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   let person = {
     image:
       "https://avatars.githubusercontent.com/u/126692302?s=400&u=613584dbb6f9277b0ab277dab6afe0e9e3e4ed12&v=4",
@@ -126,108 +134,83 @@ export default function Home() {
         <h1>Tecnologías</h1>
       </div>
       <div
-        style={{
-          alignItems: "center",
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          margin: "0%",
-          marginRight: "10px",
-          justifyContent: "center",
-        }}
-      >
-        <p align="left">
-          {" "}
-          <a href="https://expressjs.com" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
-              alt="express"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-              alt="javascript"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-          <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-              alt="mysql"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-          <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
-              alt="nextjs"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-          <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-              alt="nodejs"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-          <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-              alt="postgresql"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-        </p>
-        <p align="left">
-          {" "}
-          <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-              alt="react"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-          <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://reactnative.dev/img/header_logo.svg"
-              alt="reactnative"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-          <a href="https://redux.js.org" target="_blank" rel="noreferrer">
-            {" "}
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-              alt="redux"
-              width="80"
-              height="80"
-            />{" "}
-          </a>{" "}
-        </p>
-      </div>
+  style={{
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    margin: "10px",
+    marginRight: "10px",
+    justifyContent: "center",
+  }}
+>
+
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+      alt="express"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+    />
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+      alt="javascript"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+    />
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+      alt="mysql"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+    />
+    <img
+      src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+      alt="nextjs"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+    />
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+      alt="nodejs"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+    />
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+      alt="postgresql"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+    />
+  
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+      alt="react"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+      />
+    <img
+      src="https://reactnative.dev/img/header_logo.svg"
+      alt="reactnative"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+      />
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+      alt="redux"
+      width="80"
+      height="80"
+      style={{ margin: "20px", borderRadius: "0px" }}
+      />
+  
+</div>
       <div
         
         style={{
@@ -359,17 +342,33 @@ export default function Home() {
           marginBottom: "50px",
         }}
       >
-        <a
-          href="https://www.linkedin.com/in/andres-castro-flechas-39a0ba186/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="https://th.bing.com/th/id/R.eb68b87815aaaaba6621aa98d2e38bf5?rik=dlxhbnYpsgIL4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_24845.png&ehk=7L0l%2bl%2bMYbWa7hmGjFf%2b%2f7IEDbPLQku663OM4xHk018%3d&risl=&pid=ImgRaw&r=0"
-            alt="LinkedIn"
-            style={{ width: "40px", height: "40px", marginRight: "10px" }}
-          />
-        </a>
+      <a
+        href="https://www.linkedin.com/in/andres-castro-flechas-39a0ba186/"
+        target="_blank"
+        rel="noreferrer"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          display: "inline-block",
+          border: isHovered ? "2px solid blue" : "2px solid transparent",
+          borderRadius: "50%",
+          padding: "2px",
+          transition: "border-color 0.3s",
+        }}
+      >
+        <img
+          src="https://th.bing.com/th/id/R.eb68b87815aaaaba6621aa98d2e38bf5?rik=dlxhbnYpsgIL4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_24845.png&ehk=7L0l%2bl%2bMYbWa7hmGjFf%2b%2f7IEDbPLQku663OM4xHk018%3d&risl=&pid=ImgRaw&r=0"
+          alt="LinkedIn"
+          style={{
+            width: "40px",
+            height: "40px",
+            marginRight: "10px",
+            borderRadius: "50%",
+            boxShadow: isHovered ? "0 0 5px blue" : "none",
+          }}
+        />
+      </a>
+
         <a
           href="https://github.com/afradenburg"
           target="_blank"
