@@ -71,7 +71,7 @@ export default function Home() {
 
   return (
     <div className="homePage">
-      <h1>Bienvenido/a! a mi portafolio</h1>
+      {/* <h1>Bienvenido/a! a mi portafolio</h1> */}
       <div
         style={{
           display: "flex",
@@ -118,6 +118,7 @@ export default function Home() {
           textAlign: "center",
           fontSize: "1.5rem",
           marginBottom: "50px",
+          justifyContent: "center"
         }}
       >
         Actualmente estoy buscando oportunidades como desarrollador web. Si te
@@ -230,7 +231,7 @@ export default function Home() {
           display: "flex",
           flexDirection: "row",
           padding: "10px",
-          justifyContent: "space-around",
+          justifyContent: "space-evenly",
           flexWrap: "wrap",
         }}
       >
