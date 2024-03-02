@@ -73,7 +73,7 @@ export default function Home() {
       image:
         "https://res.cloudinary.com/djif4cgg0/image/upload/v1709415294/images/yzb7mpvhxbet5ylz8ft8.jpg",
       gitHub: "https://github.com/afradenburg/rickDeploy",
-      deploy: "https://rick-deploy-oihk89l3u-afradenburgs-projects.vercel.app/",
+      deploy: "https://rick-deploy.vercel.app/",
       tecnologias: [
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
