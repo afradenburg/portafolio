@@ -78,7 +78,7 @@ export default function Home() {
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
       ],
     },
