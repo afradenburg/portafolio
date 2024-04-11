@@ -36,7 +36,7 @@ export default function Home() {
   };
   let person = {
     image:
-      "https://avatars.githubusercontent.com/u/126692302?s=400&u=613584dbb6f9277b0ab277dab6afe0e9e3e4ed12&v=4",
+      "https://res.cloudinary.com/djif4cgg0/image/upload/v1712844499/images/oot7hwirhzqs41qyndt9.jpg",
   };
   const proyects = [
     {
@@ -87,13 +87,7 @@ export default function Home() {
   return (
     <div className="homePage">
       {/* <h1>Bienvenido/a! a mi portafolio</h1> */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          marginTop: "10px",
-        }}
+      <div className="primerSeccion"
       >
         <div
           style={{
@@ -237,9 +231,9 @@ export default function Home() {
           marginTop: "110px",
         }}
       >
-        <h2 style={{ textDecoration: "none", color: "black" }}>
+        <h1 style={{ textDecoration: "none", color: "black" }}>
           Mis Proyectos
-        </h2>
+        </h1>
       </div>
       <div
         style={{
@@ -248,6 +242,7 @@ export default function Home() {
           padding: "10px",
           justifyContent: "space-evenly",
           flexWrap: "wrap",
+          marginTop: "20px",
         }}
       >
         {proyects &&
@@ -269,7 +264,7 @@ export default function Home() {
                 style={{
                   display: "flex",
                   flexWrap: "wrap",
-                  justifyContent: "start",
+                  justifyContent: "center",
                   marginLeft: "20px",
                 }}
               >
@@ -349,7 +344,6 @@ export default function Home() {
         >
           No dudes en contactarme por cualquiera de los siguientes medios.
         </p>
-      </div>
       <div
         style={{
           display: "flex",
@@ -357,7 +351,7 @@ export default function Home() {
           justifyContent: "center",
           marginBottom: "50px",
         }}
-      >
+        >
       <a
         href="https://www.linkedin.com/in/andres-castro-flechas-39a0ba186/"
         target="_blank"
@@ -371,7 +365,7 @@ export default function Home() {
           padding: "2px",
           transition: "border-color 0.3s",
         }}
-      >
+        >
         <img
           src="https://th.bing.com/th/id/R.eb68b87815aaaaba6621aa98d2e38bf5?rik=dlxhbnYpsgIL4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_24845.png&ehk=7L0l%2bl%2bMYbWa7hmGjFf%2b%2f7IEDbPLQku663OM4xHk018%3d&risl=&pid=ImgRaw&r=0"
           alt="LinkedIn"
@@ -382,28 +376,29 @@ export default function Home() {
             borderRadius: "50%",
             boxShadow: isHovered ? "0 0 5px blue" : "none",
           }}
-        />
+          />
       </a>
 
         <a
           href="https://github.com/afradenburg"
           target="_blank"
           rel="noreferrer"
-        >
+          >
           <img
             src="https://th.bing.com/th/id/R.7a864f07681f187fb572468bfc949977?rik=EyUQGBjtSbMjVw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG80.png&ehk=sCQlSHnb7Wc8WNPgOilokXbf8jL4g20yv7QFEFpl6ko%3d&risl=&pid=ImgRaw&r=0"
             alt="GitHub"
             style={{ width: "40px", height: "40px", marginRight: "10px" }}
-          />
+            />
         </a>
         <a href="mailto:andres.burg@hotmail.com">
           <img
             src="https://th.bing.com/th/id/OIP.VEt1EhN43jbYg0DDxl4FJQHaHa?rs=1&pid=ImgDetMain"
             alt="Correo electrónico"
             style={{ width: "40px", height: "40px" }}
-          />
+            />
         </a>
       </div>
+            </div>
     </div>
   );
 }
