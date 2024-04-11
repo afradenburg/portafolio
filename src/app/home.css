@@ -1,18 +1,12 @@
 .homePage {
   background-color: rgb(252, 248, 248);
-  width: 100%;
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  height: 100%;
   margin-left: 150px;
   margin-right: 150px;
 }
 @media (max-width: 940px) {
   .homePage div {
-    justify-content: center;
-    align-items: center;
     display: flex ;
     flex-direction: column;
   }
