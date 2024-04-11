@@ -353,7 +353,7 @@ export default function Home() {
           }}
         >
           <a
-            href="https://www.linkedin.com/in/andres-castro-flechas-39a0ba186/"
+            href="https://www.linkedin.com/in/andres-castro-f-39a0ba186/"
             target="_blank"
             rel="noreferrer"
             onMouseEnter={handleMouseEnter}
