@@ -25,15 +25,7 @@ export default function Home() {
     }, [index]);
     return <h1>{text}</h1>;
   };
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+ 
   let person = {
     image:
       "https://res.cloudinary.com/djif4cgg0/image/upload/v1712844499/images/oot7hwirhzqs41qyndt9.jpg",
@@ -356,15 +348,6 @@ export default function Home() {
             href="https://www.linkedin.com/in/andres-castro-f-39a0ba186/"
             target="_blank"
             rel="noreferrer"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            style={{
-              display: "inline-block",
-              border: isHovered ? "2px solid blue" : "2px solid transparent",
-              borderRadius: "50%",
-              padding: "2px",
-              transition: "border-color 0.3s",
-            }}
           >
             <img
               src="https://th.bing.com/th/id/R.eb68b87815aaaaba6621aa98d2e38bf5?rik=dlxhbnYpsgIL4A&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_24845.png&ehk=7L0l%2bl%2bMYbWa7hmGjFf%2b%2f7IEDbPLQku663OM4xHk018%3d&risl=&pid=ImgRaw&r=0"
@@ -374,7 +357,6 @@ export default function Home() {
                 height: "40px",
                 marginRight: "10px",
                 borderRadius: "50%",
-                boxShadow: isHovered ? "0 0 5px blue" : "none",
               }}
             />
           </a>
