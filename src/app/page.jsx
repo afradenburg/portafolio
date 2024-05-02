@@ -74,6 +74,18 @@ export default function Home() {
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
       ],
     },
+    {
+      id: 4,
+      name: "GraphQL Rick and Morty",
+      image:
+        "https://res.cloudinary.com/djif4cgg0/image/upload/v1714662797/images/ftxqfldcr8fn9d0fi9mm.jpg",
+      gitHub: "https://github.com/afradenburg/challenge-Kimche",
+      deploy: "https://challenge-kimche-lemon.vercel.app/?specie=&gender=&status=",
+      tecnologias: [
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+        "https://s3.amazonaws.com/media-p.slid.es/uploads/776188/images/6716041/GraphQL_Logo.svg.png",
+      ],
+    },
   ];
 
   return (
@@ -209,6 +221,13 @@ export default function Home() {
           height="80"
           style={{ margin: "20px", borderRadius: "0px" }}
         />
+         <img
+          src="https://s3.amazonaws.com/media-p.slid.es/uploads/776188/images/6716041/GraphQL_Logo.svg.png"
+          alt="graphQL"
+          width="80"
+          height="80"
+          style={{ margin: "20px", borderRadius: "0px" }}
+        />
       </div>
       <div
         style={{
@@ -239,9 +258,8 @@ export default function Home() {
               key={proyect.id}
               style={{
                 padding: "20px",
-                maxWidth: "350px",
+                maxWidth: "300px",
                 marginBottom: "20px",
-                flexBasis: "100%",
                 justifyContent: "start",
                 width: "100%",
                 backgroundColor: " rgb(195, 193, 193)",
