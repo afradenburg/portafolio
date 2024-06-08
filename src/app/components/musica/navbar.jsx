@@ -2,7 +2,7 @@
 import Link from "next/link";
 import './navbar.css';
 
-const Navbar = () => {
+const Nav = () => {
   return (
     <div className="navBar">
         <Link href={"https://drive.google.com/file/d/1I6dCJQMjLm1qXgIsg6yc8aSq-XTMJ3wn/view?usp=drive_link"} style={{textDecoration: 'none'}} download>
@@ -13,4 +13,4 @@ const Navbar = () => {
     </div>
   )
 }
-export default Navbar;
+export default Nav;
